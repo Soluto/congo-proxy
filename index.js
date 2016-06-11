@@ -1,6 +1,7 @@
 var Promise = require('bluebird');
+var uuid = require('node-uuid');
 
-export default function (service, invoker) {
+module.exports = function (service, invoker) {
     var proxy = {};
 
     return {
@@ -15,9 +16,14 @@ export default function (service, invoker) {
 
     function createRemoteCall(service, method, args) {
         return {
+            correlationId: uuid.v4(),
             service: service,
             method: method,
-            args: args
+            args: toList(args)
         };
+    }
+
+    function toList(args) {
+        return Object.keys(args).map(function(key){return args[key]})
     }
 };

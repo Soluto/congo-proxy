@@ -19,4 +19,7 @@
   "peerDependencies": {
     "bluebird": "^3.4.0"
   },
+  "dependencies": {
+    "node-uuid": "^1.4.7"
+  }
 }
