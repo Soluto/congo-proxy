@@ -30,7 +30,7 @@ Once the proxy is created use it as you would use any Promise (for methods) or O
 myService.someMethod()
     .then(result => console.log(result));
 
-myService.some().someObservable()
+myService.someObservable()
     .doOnNext(result => console.log(result))
     .subscribe();
 ```
