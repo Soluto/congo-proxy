@@ -1,3 +1,8 @@
+![No Maintenance Intended](http://unmaintained.tech/badge.svg)
+
+# Deprecation
+This repository is deprecated and no longer supported.
+
 # Congo Proxy
 Congo Proxy enables you to easily create proxies use that use [Congo](https://github.com/Soluto/congo-core).
 
